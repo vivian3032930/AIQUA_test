@@ -754,13 +754,17 @@
     <script>
         log = function () {
             const username = document.getElementById("user").value;
+            console.log(username);
             const birthday = document.getElementById("birthday").value;
+            console.log(birthday);
             const email = document.getElementById("email").value;
+            console.log(email);
             const custom_attributes = {
                 'email': email,
                 'username': username,
                 'birthday': birthday
             };
+            console.log(custom_attributes);
             console.log(appier('identify', custom_attributes));
         }
     </script>
