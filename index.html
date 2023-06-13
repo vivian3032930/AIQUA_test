@@ -33,17 +33,6 @@
             p = g.createElement(r); p.async = !0; p.src = a; h = g.getElementsByTagName(r)[0];
             h.parentNode.insertBefore(p, h);
         }(window, document, 'script', 'https://cdn.qgr.ph/qgraph.4f4288602d6752bfa505.js');
-        !function log() {
-            const username = document.getElementById("user")
-            const birthday = document.getElementById("birthday")
-            const email = document.getElementById("email")
-            const custom_attributes = {
-                'email': email,
-                'username': username,
-                'birthday': birthday
-            }
-            console.log(appier('identify', custom_attributes));
-        }
     </script>
 </head>
 
@@ -192,7 +181,19 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-
+                    <script>
+                        !function log() {
+                            const username = document.getElementById("user")
+                            const birthday = document.getElementById("birthday")
+                            const email = document.getElementById("email")
+                            const custom_attributes = {
+                                'email': email,
+                                'username': username,
+                                'birthday': birthday
+                            }
+                            console.log(appier('identify', custom_attributes));
+                        }
+                    </script>
                     <!-- Topbar Search -->
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
