@@ -193,7 +193,7 @@
                                 id="email" aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button onclick="log();" class="btn btn-primary" type="button">
-                                    <i class="fas fa-submit fa-sm"></i>
+                                    <i class="fas fa-check fa-sm"></i>
                                 </button>
                             </div>
                         </div>
@@ -754,11 +754,8 @@
     <script>
         log = function () {
             const username = document.getElementById("user").value;
-            console.log(username);
             const birthday = document.getElementById("birthday").value;
-            console.log(birthday);
             const email = document.getElementById("email").value;
-            console.log(email);
             const custom_attributes = {
                 'email': email,
                 'username': username,
@@ -771,7 +768,6 @@
                     valuesWithContent[field] = custom_attributes[field];
                 }
             }
-            console.log(valuesWithContent);
             appier('identify', valuesWithContent);
         }
     </script>
