@@ -769,6 +769,7 @@
                 if (custom_attributes[field] !== '') {
                     // 將有內容的欄位值和對應的標題組成字串，加入到 valuesWithContent 陣列中
                     valuesWithContent.push(`${field}: ${custom_attributes[field]}`);
+                    valuesWithContent[field] = custom_attributes[field];
                 }
             }
             console.log(valuesWithContent);
